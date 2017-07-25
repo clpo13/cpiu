@@ -1,0 +1,42 @@
+{
+  "name": "cpiu",
+  "version": "1.0.0",
+  "description": "A Node.js interface for CPI-U data provided by the U.S. Bureau of Labor Statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clpo13/cpiu.git"
+  },
+  "keywords": [
+    "cpi",
+    "bls",
+    "inflation",
+    "bureau of labor statistics",
+    "consumer price index"
+  ],
+  "author": "Cody Logan <cody@madrants.net>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/clpo13/cpiu/issues"
+  },
+  "homepage": "https://github.com/clpo13/cpiu#readme",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
