@@ -7,6 +7,8 @@ Neither I nor BLS.gov can vouch for the data or analyses derived from these data
 
 Requires [Node.js](https://nodejs.org). Get the module with `npm install cpiu` and use it with `var cpiu = require('cpiu');`.
 
+Move `.env.example` to `.env` and enter your BLS API key, which can be obtained [here](https://data.bls.gov/registrationEngine/).
+
 ## License
 
 This code is licensed under [GPLv3](LICENSE).

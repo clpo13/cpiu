@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv-safe').load()
 const rp = require('request-promise')
 
 const baseURI = 'https://api.bls.gov/publicAPI/v2/timeseries/data/'
