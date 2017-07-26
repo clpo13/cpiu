@@ -11,6 +11,10 @@ describe('cpiu', function () {
   })
 
   describe('singleSeriesWithOptions', function () {
-    it('should return an error when the wrong year is given')
+    it('should return the right status', function () {
+      cpiu.singleSeriesWithOptions(1999, 2000).then(function (res) {
+        assert(res.status === 'REQUEST_SUCCEEDED')
+      })
+    })
   })
 })

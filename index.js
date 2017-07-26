@@ -45,8 +45,8 @@ function singleSeries () {
  * with options to to include annual averages and change calculations.
  * @param {number} start first year of data to be requested
  * @param {number} end last year of data to be requested
- * @param {Boolean} average average of each year's data
- * @param {Boolean} calc net and percent changes between months and years
+ * @param {Boolean} [average=false] average of each year's data
+ * @param {Boolean} [calc=false] net and percent changes between months and years
  * @returns {Promise}
  */
 function singleSeriesWithOptions (start, end, average = false, calc = false) {
