@@ -43,13 +43,15 @@ function singleSeries () {
 /**
  * Retrieve data for an arbitrary range of years (max 20 year span)
  * with options to to include annual averages and change calculations.
+ * If no parameters are specified, data for the last three years will
+ * be returned. If a start year is given, an end year must also be given.
  * @param {number} start first year of data to be requested
  * @param {number} end last year of data to be requested
- * @param {Boolean} [average=false] average of each year's data
- * @param {Boolean} [calc=false] net and percent changes between months and years
+ * @param {Boolean} average average of each year's data
+ * @param {Boolean} calc net and percent changes between months and years
  * @returns {Promise}
  */
-function singleSeriesWithOptions (start, end, average = false, calc = false) {
+function singleSeriesWithOptions (start, end, average, calc) {
   const options = {
     method: 'POST',
     uri: `${baseURI}`,
