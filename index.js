@@ -7,22 +7,26 @@ const series = 'CUUR0000SA0'
 /**
  * Request data from the BLS public API.
  * @param {Array} options payload to send to the API
+ * @returns {Promise}
  */
 function requestData (options) {
-  rp(options)
+  return rp(options)
     .then(function (res) {
       // do something
-      console.log(res)
-      //console.log(res.Results.series[0].data[0])
+      // console.log(res)
+      // console.log(res.Results.series[0].data[0])
+      return res
     })
     .catch(function (err) {
       // handle error
-      console.log(err)
+      // console.log(err)
+      return err
     })
 }
 
 /**
  * Retrieve data for the past three years of this series.
+ * @returns {Promise}
  */
 function singleSeries () {
   const options = {
@@ -33,7 +37,7 @@ function singleSeries () {
     json: true
   }
 
-  requestData(options)
+  return requestData(options)
 }
 
 /**
@@ -43,6 +47,7 @@ function singleSeries () {
  * @param {number} end last year of data to be requested
  * @param {Boolean} average average of each year's data
  * @param {Boolean} calc net and percent changes between months and years
+ * @returns {Promise}
  */
 function singleSeriesWithOptions (start, end, average = false, calc = false) {
   const options = {
@@ -59,7 +64,7 @@ function singleSeriesWithOptions (start, end, average = false, calc = false) {
     json: true
   }
 
-  requestData(options)
+  return requestData(options)
 }
 
 module.exports = {
