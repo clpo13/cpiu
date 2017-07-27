@@ -1,5 +1,5 @@
-const assert = require('assert')
-const cpiu = require('../index')
+// const assert = require('assert')
+// const cpiu = require('../index')
 
 describe('cpiu', function () {
   describe('singleSeries', function () {

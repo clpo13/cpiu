@@ -31,9 +31,6 @@ function requestData (options) {
 function singleSeries () {
   const options = {
     uri: `${baseURI}${series}`,
-    qs: {
-      registrationkey: process.env.BLS_API_KEY
-    },
     json: true
   }
 
