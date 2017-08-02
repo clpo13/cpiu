@@ -14,10 +14,20 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+// Code for recording HTTP requests:
+// nock.recorder.rec({
+//   output_objects: true
+// })
+// <...HTTP request code...>
+// var nockCallObjects = nock.recorder.play()
+// console.log(nockCallObjects[0].response)
+// fs.writeFileSync(path.join(__dirname, '/replies/singleYear.json'), JSON.stringify(nockCallObjects[0].response, null, '  '))
+
 const expect = require('chai').expect
 const nock = require('nock')
 const cpiu = require('../index')
 const path = require('path')
+// const fs = require('fs')
 
 describe('cpiu', function () {
   describe('singleSeries', function () {
@@ -26,7 +36,7 @@ describe('cpiu', function () {
         .get('/publicAPI/v2/timeseries/data/CUUR0000SA0')
         .replyWithFile(200, path.join(__dirname, '/replies/singleSeries.json'))
 
-      cpiu.singleSeries().then(function (res) {
+      return cpiu.singleSeries().then(function (res) {
         expect(res.status).to.equal('REQUEST_SUCCEEDED')
       })
     })
@@ -38,8 +48,46 @@ describe('cpiu', function () {
         .post('/publicAPI/v2/timeseries/data/')
         .replyWithFile(200, path.join(__dirname, '/replies/singleSeriesWithOptions.json'))
 
-      cpiu.singleSeriesWithOptions(1913, 1914, true, true).then(function (res) {
+      return cpiu.singleSeriesWithOptions(1913, 1914, true, true).then(function (res) {
         expect(res.status).to.equal('REQUEST_SUCCEEDED')
+      })
+    })
+  })
+
+  describe('singleYear', function () {
+    it('should return an array with thirteen elements', function () {
+      // twelve months plus annual data
+
+      nock('https://api.bls.gov')
+        .post('/publicAPI/v2/timeseries/data/')
+        .replyWithFile(200, path.join(__dirname, '/replies/singleYear.json'))
+
+      return cpiu.singleYear(1913).then(function (res) {
+        expect(res.length).to.equal(13)
+      })
+    })
+  })
+
+  describe('singleYearCPI', function () {
+    it('should return a number', function () {
+      nock('https://api.bls.gov')
+        .post('/publicAPI/v2/timeseries/data/')
+        .replyWithFile(200, path.join(__dirname, '/replies/singleYear.json'))
+
+      return cpiu.singleYearCPI(1913).then(function (res) {
+        expect(res).to.be.a('number')
+      })
+    })
+  })
+
+  describe('singleMonthCPI', function () {
+    it('should return a number', function () {
+      nock('https://api.bls.gov')
+        .post('/publicAPI/v2/timeseries/data/')
+        .replyWithFile(200, path.join(__dirname, '/replies/singleYear.json'))
+
+      return cpiu.singleMonthCPI(1913, 1).then(function (res) {
+        expect(res).to.be.a('number')
       })
     })
   })

@@ -1,0 +1,131 @@
+{
+  "status": "REQUEST_SUCCEEDED",
+  "responseTime": 45,
+  "message": [],
+  "Results": {
+    "series": [
+      {
+        "seriesID": "CUUR0000SA0",
+        "data": [
+          {
+            "year": "1913",
+            "period": "M13",
+            "periodName": "Annual",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M12",
+            "periodName": "December",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M11",
+            "periodName": "November",
+            "value": "10.1",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M10",
+            "periodName": "October",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M09",
+            "periodName": "September",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M08",
+            "periodName": "August",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M07",
+            "periodName": "July",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M06",
+            "periodName": "June",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M05",
+            "periodName": "May",
+            "value": "9.7",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M04",
+            "periodName": "April",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M03",
+            "periodName": "March",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M02",
+            "periodName": "February",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          },
+          {
+            "year": "1913",
+            "period": "M01",
+            "periodName": "January",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,4 +1,454 @@
-{"status":"REQUEST_SUCCEEDED","responseTime":41,"message":[],"Results":{
-"series":
-[{"seriesID":"CUUR0000SA0","data":[{"year":"1914","period":"M13","periodName":"Annual","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-1.0","6":"0.0","12":"1.0"}}},{"year":"1914","period":"M12","periodName":"December","value":"10.1","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-1.0","6":"2.0","12":"1.0"}}},{"year":"1914","period":"M11","periodName":"November","value":"10.2","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"0.0","6":"3.0","12":"1.0"}}},{"year":"1914","period":"M10","periodName":"October","value":"10.1","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"1.0","6":"3.1","12":"1.0"}}},{"year":"1914","period":"M09","periodName":"September","value":"10.2","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"3.0","6":"3.0","12":"2.0"}}},{"year":"1914","period":"M08","periodName":"August","value":"10.2","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"2.0","3":"3.0","6":"3.0","12":"3.0"}}},{"year":"1914","period":"M07","periodName":"July","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"2.0","6":"0.0","12":"1.0"}}},{"year":"1914","period":"M06","periodName":"June","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"0.0","6":"-1.0","12":"1.0"}}},{"year":"1914","period":"M05","periodName":"May","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"0.0","6":"-2.0","12":"2.1"}}},{"year":"1914","period":"M04","periodName":"April","value":"9.8","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-2.0","6":"-2.0","12":"0.0"}}},{"year":"1914","period":"M03","periodName":"March","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"-1.0","6":"-1.0","12":"1.0"}}},{"year":"1914","period":"M02","periodName":"February","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-2.0","6":"0.0","12":"1.0"}}},{"year":"1914","period":"M01","periodName":"January","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"0.0","6":"1.0","12":"2.0"}}},{"year":"1913","period":"M13","periodName":"Annual","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-1.0","6":"0.0"}}},{"year":"1913","period":"M12","periodName":"December","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"0.0","6":"2.0"}}},{"year":"1913","period":"M11","periodName":"November","value":"10.1","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"2.0","6":"4.1"}}},{"year":"1913","period":"M10","periodName":"October","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"1.0","6":"2.0"}}},{"year":"1913","period":"M09","periodName":"September","value":"10.0","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"2.0","6":"2.0"}}},{"year":"1913","period":"M08","periodName":"August","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"2.1","6":"1.0"}}},{"year":"1913","period":"M07","periodName":"July","value":"9.9","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"1.0","6":"1.0"}}},{"year":"1913","period":"M06","periodName":"June","value":"9.8","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"1.0","3":"0.0"}}},{"year":"1913","period":"M05","periodName":"May","value":"9.7","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"-1.0","3":"-1.0"}}},{"year":"1913","period":"M04","periodName":"April","value":"9.8","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0","3":"0.0"}}},{"year":"1913","period":"M03","periodName":"March","value":"9.8","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0"}}},{"year":"1913","period":"M02","periodName":"February","value":"9.8","footnotes":[{}],"calculations":{"net_changes":{},"pct_changes":{"1":"0.0"}}},{"year":"1913","period":"M01","periodName":"January","value":"9.8","footnotes":[{}]}]}]
-}}
+{
+  "status": "REQUEST_SUCCEEDED",
+  "responseTime": 58,
+  "message": [],
+  "Results": {
+    "series": [
+      {
+        "seriesID": "CUUR0000SA0",
+        "data": [
+          {
+            "year": "1914",
+            "period": "M13",
+            "periodName": "Annual",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-1.0",
+                "6": "0.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M12",
+            "periodName": "December",
+            "value": "10.1",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-1.0",
+                "6": "2.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M11",
+            "periodName": "November",
+            "value": "10.2",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "0.0",
+                "6": "3.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M10",
+            "periodName": "October",
+            "value": "10.1",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "1.0",
+                "6": "3.1",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M09",
+            "periodName": "September",
+            "value": "10.2",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "3.0",
+                "6": "3.0",
+                "12": "2.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M08",
+            "periodName": "August",
+            "value": "10.2",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "2.0",
+                "3": "3.0",
+                "6": "3.0",
+                "12": "3.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M07",
+            "periodName": "July",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "2.0",
+                "6": "0.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M06",
+            "periodName": "June",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "0.0",
+                "6": "-1.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M05",
+            "periodName": "May",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "0.0",
+                "6": "-2.0",
+                "12": "2.1"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M04",
+            "periodName": "April",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-2.0",
+                "6": "-2.0",
+                "12": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M03",
+            "periodName": "March",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "-1.0",
+                "6": "-1.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M02",
+            "periodName": "February",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-2.0",
+                "6": "0.0",
+                "12": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1914",
+            "period": "M01",
+            "periodName": "January",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "0.0",
+                "6": "1.0",
+                "12": "2.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M13",
+            "periodName": "Annual",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-1.0",
+                "6": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M12",
+            "periodName": "December",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "0.0",
+                "6": "2.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M11",
+            "periodName": "November",
+            "value": "10.1",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "2.0",
+                "6": "4.1"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M10",
+            "periodName": "October",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "1.0",
+                "6": "2.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M09",
+            "periodName": "September",
+            "value": "10.0",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "2.0",
+                "6": "2.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M08",
+            "periodName": "August",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "2.1",
+                "6": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M07",
+            "periodName": "July",
+            "value": "9.9",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "1.0",
+                "6": "1.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M06",
+            "periodName": "June",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "1.0",
+                "3": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M05",
+            "periodName": "May",
+            "value": "9.7",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "-1.0",
+                "3": "-1.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M04",
+            "periodName": "April",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0",
+                "3": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M03",
+            "periodName": "March",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M02",
+            "periodName": "February",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ],
+            "calculations": {
+              "net_changes": {},
+              "pct_changes": {
+                "1": "0.0"
+              }
+            }
+          },
+          {
+            "year": "1913",
+            "period": "M01",
+            "periodName": "January",
+            "value": "9.8",
+            "footnotes": [
+              {}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
