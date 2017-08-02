@@ -17,7 +17,7 @@ Move `.env.example` to `.env` (or create a `.env` file with the environment vari
 
 ## Usage
 
-Documentation can be found [here](https://clpo13.github.io/cpiu).
+Documentation pending.
 
 ## License
 
