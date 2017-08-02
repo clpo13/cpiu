@@ -36,7 +36,7 @@ function requestData (options) {
     })
     .catch(function (err) {
       // handle error
-      // console.log(err)
+      console.log(err)
       return err
     })
 }
@@ -107,7 +107,7 @@ function singleYear (year) {
 function singleYearCPI (year) {
   return singleYear(year)
     .then(function (data) {
-      return data[0].value
+      return Number(data[0].value)
     })
 }
 
@@ -121,7 +121,7 @@ function singleYearCPI (year) {
 function singleMonthCPI (year, month) {
   return singleYear(year)
     .then(function (data) {
-      return data.reverse()[month - 1].value
+      return Number(data.reverse()[month - 1].value)
     })
 }
 
