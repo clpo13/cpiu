@@ -39,7 +39,7 @@
     "nyc": "^13.1.0"
   },
   "dependencies": {
-    "dotenv-safe": "^4.0.4",
+    "dotenv-safe": "^6.1.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
