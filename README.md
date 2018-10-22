@@ -18,7 +18,9 @@ Copy `.env.example` to `.env` (or create a `.env` file with the environment vari
 
 ## Usage
 
-Documentation pending.
+API documentation can be found [here](https://clpo13.github.io/cpiu).
+
+Better documentation, including examples, is pending.
 
 ## License
 
