@@ -1,5 +1,5 @@
 // CPIU - a Node.js interface for fetching CPI-U data from BLS.gov
-// Copyright (C) 2017 Cody Logan
+// Copyright (C) 2017–2018 Cody Logan
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ const series = 'CUUR0000SA0'
 
 /**
  * Request data from the BLS public API.
- * 
+ *
  * @param {Array} options payload to send to the API
  * @returns {Promise}
  */
@@ -43,7 +43,7 @@ function requestData (options) {
 
 /**
  * Retrieve data for the past three years of this series.
- * 
+ *
  * @returns {Promise}
  */
 function singleSeries () {
@@ -60,7 +60,7 @@ function singleSeries () {
  * with options to to include annual averages and change calculations.
  * If no parameters are specified, data for the last three years will
  * be returned. If a start year is given, an end year must also be given.
- * 
+ *
  * @param {number} start first year of data to be requested
  * @param {number} end last year of data to be requested
  * @param {Boolean} average average of each year's data
@@ -87,7 +87,7 @@ function singleSeriesWithOptions (start, end, average, calc) {
 
 /**
  * Retrieve data for a single year, stripped of unnecessary response data.
- * 
+ *
  * @param {number} year the year to get data for
  * @returns {Promise}
  */
@@ -100,7 +100,7 @@ function singleYear (year) {
 
 /**
  * Get the annual average CPI value for a single year.
- * 
+ *
  * @param {number} year the year to get data for
  * @returns {Promise}
  */
@@ -113,7 +113,7 @@ function singleYearCPI (year) {
 
 /**
  * Get the CPI value for a single month.
- * 
+ *
  * @param {number} year the year to get data for
  * @param {number} month the month to get data for
  * @returns {Promise}
