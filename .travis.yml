@@ -1,9 +1,18 @@
 language: node_js
 node_js:
-  - node
-  - lts/*
-  - '6'
+- node
+- lts/*
+- '8'
+- '6'
 cache:
   directories:
-    - node_modules
+  - node_modules
 after_success: npm run coverage
+deploy:
+  provider: npm
+  email: clpo13@gmail.com
+  api_key:
+    secure: P0xJrhApRx0kLUzJY89dw8PcG+PAWSZ7hQ14wwhGYeuSp5soDjM4vS4mKiEDLMnuZ4zgajVeWxjhnIvnPRXsvaHe0oeTghk1AkArlZfLrypESbn0jk2IvrIBTkpIxHD3tddZgX3qeL06oha2ELuUSTMCw+UtAYdKu7CKt/6lSnVF5eKiNbTuQ+Qt/XS6yaPKFrvSe6tW7Zl21yZlb3ox4uVgynCUM++KqkzTP29fpPEoYZC+jIWF31858CxhPJ780E4NgleayIfWvovTDSoxpzyLUK+zRdSQ2OxtaVkOsOQNIdZrKhsOpRz4h8e9Vr9aFKRt5aH6i85DKXdH+wffSzKg4FWMmyGwUWBB/VLUo8b44+3rrTMNpKN5Ktj5NPMb2/777ne/7pkaPSCNxKJ9l4fM24GprQtQiXkeRZ8LdKSj1ju1MYQ6tQ/w1RUHFQ1BaGASISD57ExohfYIJeftNkaia/JdcWHNyQ3Ul2fsBbFqiPqW8CALHk8HwcYmVo4TfVAQMBHwTKwMBD5ujh1rS8MCOhAupafSbTHjQVUyneOw9BVtcpFjzWbmXyEC0j5Lh+T5ZaOntVWisPL7JIEAAKI4cUS471dpkxqiHrCFSbR9tUifbgbwwDxxfiB6co3XrOoBEBryghnBWXA+Wfjm3UzWEN1w/6aMkvmY2gZ4zk0=
+  on:
+    tags: true
+    repo: clpo13/cpiu

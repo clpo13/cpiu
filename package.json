@@ -1,6 +1,6 @@
 {
   "name": "cpiu",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A Node.js interface for CPI-U data provided by the U.S. Bureau of Labor Statistics",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "bureau of labor statistics",
     "consumer price index"
   ],
-  "author": "Cody Logan <cody@madrants.net>",
+  "author": "Cody Logan <clpo13@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/clpo13/cpiu/issues"
