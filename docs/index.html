@@ -1,21 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset='utf-8' />
-  <title>cpiu 0.2.0 | Documentation</title>
-  <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
-  <link href='assets/style.css' type='text/css' rel='stylesheet' />
-  <link href='assets/github.css' type='text/css' rel='stylesheet' />
-  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+  <meta charset='utf-8'>
+  <title>cpiu 0.2.2 | Documentation</title>
   <meta name='description' content='A Node.js interface for CPI-U data provided by the U.S. Bureau of Labor Statistics'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
 </head>
 <body class='documentation m0'>
     <div class='flex'>
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>cpiu</h3>
-          <div class='mb1'><code>0.2.0</code></div>
+          <div class='mb1'><code>0.2.2</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -87,7 +87,7 @@
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
-            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
           </div>
         </div>
       </div>
@@ -109,10 +109,7 @@
 
   <p>Request data from the BLS public API.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>requestData(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -160,8 +157,11 @@
   
 
   
+
+  
 </section>
 
+          
         
           
           <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -179,10 +179,7 @@
 
   <p>Retrieve data for the past three years of this series.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>singleSeries(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -216,8 +213,11 @@
   
 
   
+
+  
 </section>
 
+          
         
           
           <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -238,10 +238,7 @@ with options to to include annual averages and change calculations.
 If no parameters are specified, data for the last three years will
 be returned. If a start year is given, an end year must also be given.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>singleSeriesWithOptions(start: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, end: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, average: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>, calc: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -316,8 +313,11 @@ be returned. If a start year is given, an end year must also be given.</p>
   
 
   
+
+  
 </section>
 
+          
         
           
           <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -335,10 +335,7 @@ be returned. If a start year is given, an end year must also be given.</p>
 
   <p>Retrieve data for a single year, stripped of unnecessary response data.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>singleYear(year: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -386,8 +383,11 @@ be returned. If a start year is given, an end year must also be given.</p>
   
 
   
+
+  
 </section>
 
+          
         
           
           <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -405,10 +405,7 @@ be returned. If a start year is given, an end year must also be given.</p>
 
   <p>Get the annual average CPI value for a single year.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>singleYearCPI(year: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -456,8 +453,11 @@ be returned. If a start year is given, an end year must also be given.</p>
   
 
   
+
+  
 </section>
 
+          
         
           
           <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -475,10 +475,7 @@ be returned. If a start year is given, an end year must also be given.</p>
 
   <p>Get the CPI value for a single month.</p>
 
- 
-  
     <div class='pre p1 fill-light mt0'>singleMonthCPI(year: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, month: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
-   
   
   
 
@@ -535,8 +532,11 @@ be returned. If a start year is given, an end year must also be given.</p>
   
 
   
+
+  
 </section>
 
+          
         
       </div>
     </div>
