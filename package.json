@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nyc mocha",
     "lint": "eslint .",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "docs": "documentation build index.js -f html -o docs"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "acorn": "^7.1.1",
     "chai": "^4.2.0",
     "codecov": "^3.5.0",
+    "documentation": "^13.0.2",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.18.0",
