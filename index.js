@@ -1,5 +1,5 @@
 // CPIU - a Node.js interface for fetching CPI-U data from BLS.gov
-// Copyright (C) 2017–2019 Cody Logan
+// Copyright (C) 2017–2020 Cody Logan
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
