@@ -30,6 +30,21 @@ const path = require('path')
 // const fs = require('fs')
 
 describe('cpiu', function () {
+  describe('badRequest', function () {
+    it('should return an exception', function () {
+      nock('https://api.bls.gov')
+        .get('/publicAPI/v2/timeseries/data/CUUR0000SA0')
+        .replyWithError({
+          message: 'access denied',
+          code: '403'
+        })
+
+      return cpiu.singleSeries().then(function (err) {
+        expect(err).to.exist // eslint-disable-line no-unused-expressions
+      })
+    })
+  })
+
   describe('singleSeries', function () {
     it('should return the right status', function () {
       nock('https://api.bls.gov')

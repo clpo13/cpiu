@@ -36,7 +36,7 @@ function requestData (options) {
     })
     .catch(function (err) {
       // handle error
-      console.log(err)
+      // console.log(err)
       return err
     })
 }
