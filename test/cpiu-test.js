@@ -52,7 +52,7 @@ describe('cpiu', function () {
         .replyWithFile(200, path.join(__dirname, '/replies/singleSeries.json'))
 
       return cpiu.singleSeries().then(function (res) {
-        expect(res.status).to.equal('REQUEST_SUCCEEDED')
+        expect(res.data.status).to.equal('REQUEST_SUCCEEDED')
       })
     })
   })
@@ -64,7 +64,7 @@ describe('cpiu', function () {
         .replyWithFile(200, path.join(__dirname, '/replies/singleSeriesWithOptions.json'))
 
       return cpiu.singleSeriesWithOptions(1913, 1914, true, true).then(function (res) {
-        expect(res.status).to.equal('REQUEST_SUCCEEDED')
+        expect(res.data.status).to.equal('REQUEST_SUCCEEDED')
       })
     })
   })

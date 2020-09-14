@@ -15,7 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 require('dotenv-safe').load()
-const rp = require('request-promise')
+const axios = require('axios')
 
 const baseURI = 'https://api.bls.gov/publicAPI/v2/timeseries/data/'
 const series = 'CUUR0000SA0'
@@ -27,7 +27,7 @@ const series = 'CUUR0000SA0'
  * @returns {Promise}
  */
 function requestData (options) {
-  return rp(options)
+  return axios(options)
     .then(function (res) {
       // do something
       // console.log(res)
@@ -48,8 +48,7 @@ function requestData (options) {
  */
 function singleSeries () {
   const options = {
-    uri: `${baseURI}${series}`,
-    json: true
+    url: `${baseURI}${series}`
   }
 
   return requestData(options)
@@ -69,17 +68,16 @@ function singleSeries () {
  */
 function singleSeriesWithOptions (start, end, average, calc) {
   const options = {
-    method: 'POST',
-    uri: `${baseURI}`,
-    body: {
+    method: 'post',
+    url: `${baseURI}`,
+    data: {
       registrationkey: process.env.BLS_API_KEY,
       seriesid: [`${series}`],
       startyear: start,
       endyear: end,
       annualaverage: average,
       calculations: calc
-    },
-    json: true
+    }
   }
 
   return requestData(options)
@@ -93,8 +91,8 @@ function singleSeriesWithOptions (start, end, average, calc) {
  */
 function singleYear (year) {
   return singleSeriesWithOptions(year, year, true)
-    .then(function (data) {
-      return data.Results.series[0].data
+    .then(function (res) {
+      return res.data.Results.series[0].data
     })
 }
 

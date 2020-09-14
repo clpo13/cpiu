@@ -42,16 +42,17 @@
     "nyc": "^15.0.0"
   },
   "dependencies": {
-    "dotenv-safe": "^6.1.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "axios": "^0.20.0",
+    "dotenv-safe": "^6.1.0"
   },
   "eslintConfig": {
-      "env": {
-          "node": true,
-          "mocha": true
-      },
-      "extends": "standard",
-      "ignorePatterns": ["docs/"]
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "extends": "standard",
+    "ignorePatterns": [
+      "docs/"
+    ]
   }
 }
