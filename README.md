@@ -1,8 +1,6 @@
 # CPIU
 
-[![Build Status](https://travis-ci.org/clpo13/cpiu.svg?branch=master)](https://travis-ci.org/clpo13/cpiu)
-[![Dependency Status](https://david-dm.org/clpo13/cpiu.svg)](https://david-dm.org/clpo13/cpiu)
-[![devDependency Status](https://david-dm.org/clpo13/cpiu/dev-status.svg)](https://david-dm.org/clpo13/cpiu#info=devDependencies)
+[![Build Status](https://app.travis-ci.com/clpo13/cpiu.svg?branch=master)](https://app.travis-ci.com/clpo13/cpiu)
 [![codecov](https://codecov.io/gh/clpo13/cpiu/branch/master/graph/badge.svg)](https://codecov.io/gh/clpo13/cpiu)
 [![npm](https://img.shields.io/npm/v/cpiu.svg)](https://www.npmjs.com/package/cpiu)
 
