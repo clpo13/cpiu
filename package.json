@@ -42,7 +42,7 @@
     "nyc": "^15.0.0"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "dotenv-safe": "^6.1.0"
   },
   "eslintConfig": {
